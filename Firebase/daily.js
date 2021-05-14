@@ -26,7 +26,7 @@ module.exports = {
   database.ref(`Coins/${message.author.id}`).update({coins: Number(Daily + Dailyon.val().coins)})
   }
     
-  let emoglobina = new Discord.Client()
+  let emoglobina = new Discord.MessageEmbed()
   .setColor('#2F3136')
   .setTimestamp()
   .setThumbnail(eu.displayAvatarURL({ size: 1024, format: 'png', dynamic: true }))
